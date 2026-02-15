@@ -72,7 +72,7 @@ $$P^* = T(t) = (x_T + v_{Tx} \cdot t, \quad y_T + v_{Ty} \cdot t)$$
 
 The hunter's required heading (in navigation convention) is:
 
-$$\theta_H = \text{atan2}(P^{*}_{x} - x_H, \quad P^{*}_{y} - y_H)$$
+$$\theta_H = \text{atan2}(P^{\ast}_{x} - x_H, \quad P^{\ast}_{y} - y_H)$$
 
 Note the argument order: `atan2(east, north)` directly produces a navigation angle (0° = North, CW positive).
 
