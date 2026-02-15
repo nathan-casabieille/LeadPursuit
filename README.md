@@ -152,6 +152,5 @@ cmake --build build
 ./build/LeadPursuit
 ```
 
-## License
-
-MIT
+## Sample Output
+![Interception en angle](output/interception_en_angle.png)
