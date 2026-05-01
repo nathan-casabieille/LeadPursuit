@@ -3,6 +3,7 @@
 #include "math/Types.h"
 
 #include <QWidget>
+#include <QColor>
 #include <optional>
 
 namespace lead_pursuit {
@@ -22,6 +23,7 @@ protected:
 private:
     void drawGrid(QPainter& painter, const QRectF& world, const QTransform& xform);
     void drawNorthArrow(QPainter& painter);
+    void drawFighterJet(QPainter& painter, QPointF pos, double heading_deg, QColor color);
 
     QPointF worldToScreen(double wx, double wy) const;
     QRectF computeWorldBounds() const;
@@ -30,7 +32,6 @@ private:
     std::optional<InterceptionResult> result_;
     bool has_data_{false};
 
-    // Cached transform info
     double scale_{1.0};
     double offset_x_{0.0};
     double offset_y_{0.0};

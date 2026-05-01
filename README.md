@@ -4,6 +4,8 @@ A C++20 / Qt6 application that analytically solves the classic **constant-veloci
 
 No iterative methods, no numerical integration — just a clean quadratic equation derived from first principles.
 
+![Interception en angle](output/interception_en_angle.png)
+
 ## The Problem
 
 Two entities move on a 2D plane:
@@ -152,5 +154,3 @@ cmake --build build
 ./build/LeadPursuit
 ```
 
-## Sample Output
-![Interception en angle](output/interception_en_angle.png)
